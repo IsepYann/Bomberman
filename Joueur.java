@@ -30,7 +30,7 @@ public class Joueur {
     public int positionY;
 
 //Méthode déplacement
-    public void boolean keyDown (Event evt, int key){
+    public boolean keyDown (Event evt, int key){
     	switch(key){
     	//Flèche du bas
     	case Event.Down:
