@@ -29,13 +29,43 @@ public class Joueur {
 
     public int positionY;
 
-
-    public void Deplacement() {
-        if(this.positionX==0 && this.positionY==0){
-        	 // Gérer les évènements clavier
-        	// Une classe doit-elle être créée?
-        }
-    }
+//Méthode déplacement
+    public void boolean keyDown (Event evt, int key){
+    	switch(key){
+    	//Flèche du bas
+    	case Event.Down:
+    		if(positionY>0){
+    			positionY=positionY--;
+    		}
+    			break;
+    			
+    			//Flèche du haut
+    			case 1004:
+    				if(positionY<550){ //550=largeur max du terrain
+    					positionY++;
+    				}
+    					break;
+    				
+    				
+    			//Flèche vers la gauche
+    			case Event.LEFT{
+    				if(positionX>0){
+    					positionX--;
+    					}
+    				break;
+    			
+    				//Flèche vers la Droite
+    				case Event.RIGHT:
+    					if(positionX<750){  //750=longueur max du terrain
+    						positionX++;
+    					}
+    				break;
+    				return true;
+    				}
+    		}
+    	}
+        
+        
 
     public void PoserBombes() {
         // TODO implement here
