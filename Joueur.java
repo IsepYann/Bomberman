@@ -48,7 +48,7 @@ public class Joueur {
     				
     				
     			//Flèche vers la gauche
-    			case Event.LEFT{
+    			case Event.LEFT:
     				if(positionX>0){
     					positionX--;
     					}
